@@ -298,12 +298,12 @@ AZURE_API_KEY = "your-azure-api-key"
 
 ## 📝 使用示例
 
-### 完整流程示例（以NumPy为例）
+### 完整流程示例（以React为例）
 
 ```bash
 # 1. 准备URL列表
-echo "url" > input.csv
-echo "https://numpy.org/doc/stable/reference/generated/numpy.ndarray.shape.html" >> input.csv
+echo "url" > react.csv
+echo "https://react.dev/reference/react-dom/flushSync" >> react.csv
 
 # 2. 运行基础爬虫
 cd Get_data/WebAgent
@@ -314,11 +314,11 @@ python api_crawler_gpt.py
 
 # 4. 数据预处理
 cd pre_process
-# 修改 preprocess_data.py 的文件名为 NumPy
+# 修改 preprocess_data.py 的文件名为 React
 python preprocess_data.py
 
 # 5. 增强处理
 cd preprocess_data
-# 配置 enhanced_api_crawler.py 的输入为 preprocess_NumPy.csv
+# 配置 enhanced_api_crawler.py 的输入为 preprocess_React.csv
 python enhanced_api_crawler.py
 ```
